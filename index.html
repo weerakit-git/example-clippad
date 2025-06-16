@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom Shape Example</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .custom-shape {
+      width: 90%;
+      height: 90vh;
+     background: #020024;
+background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+      clip-path: polygon(
+        0 0, calc(50% - 93px) .74px, calc(50% - 86px) 1.48px, calc(50% - 81px) 2.96px,
+        calc(50% - 75px) 5.92px, calc(50% - 68px) 10.36px, calc(50% - 63.5px) 14.06px,
+        calc(50% - 58px) 19.24px, calc(50% - 53px) 24.42px, calc(50% - 48px) 30.34px,
+        calc(50% - 44px) 35.52px, calc(50% - 40px) 42.18px, calc(50% - 36px) 48.84px,
+        calc(50% - 33px) 55.5px, calc(50% - 31px) 61.42px, calc(50% - 29px) 67.34px,
+        calc(50% - 27px) 74px, calc(50% - 22px) 74px, calc(50% - 28px) 39.96px,
+        calc(50% - 29px) 28.12px, calc(50% - 30px) 0, calc(50% + 30px) 0,
+        calc(50% + 29px) 28.12px, calc(50% + 28px) 39.96px, calc(50% + 22px) 74px,
+        calc(50% + 27px) 74px, calc(50% + 29px) 67.34px, calc(50% + 31px) 61.42px,
+        calc(50% + 33px) 55.5px, calc(50% + 36px) 48.84px, calc(50% + 40px) 42.18px,
+        calc(50% + 44px) 35.52px, calc(50% + 48px) 30.34px, calc(50% + 53px) 24.42px,
+        calc(50% + 58px) 19.24px, calc(50% + 63.5px) 14.06px, calc(50% + 68px) 10.36px,
+        calc(50% + 75px) 5.92px, calc(50% + 81px) 2.96px, calc(50% + 86px) 1.48px,
+        calc(50% + 93px) .74px, 100% 0, 100% 100%, calc(50% + 93px) calc(100% - .74px),
+        calc(50% + 86px) calc(100% - 1.48px), calc(50% + 81px) calc(100% - 2.96px),
+        calc(50% + 75px) calc(100% - 5.92px), calc(50% + 68px) calc(100% - 10.36px),
+        calc(50% + 63.5px) calc(100% - 14.06px), calc(50% + 58px) calc(100% - 19.24px),
+        calc(50% + 53px) calc(100% - 24.42px), calc(50% + 48px) calc(100% - 30.34px),
+        calc(50% + 44px) calc(100% - 35.52px), calc(50% + 40px) calc(100% - 42.18px),
+        calc(50% + 36px) calc(100% - 48.84px), calc(50% + 33px) calc(100% - 55.5px),
+        calc(50% + 31px) calc(100% - 61.42px), calc(50% + 29px) calc(100% - 67.34px),
+        calc(50% + 27px) calc(100% - 74px), calc(50% + 22px) calc(100% - 74px),
+        calc(50% + 28px) calc(100% - 39.96px), calc(50% + 29px) calc(100% - 28.12px),
+        calc(50% + 30px) 100%, calc(50% - 30px) 100%, calc(50% - 29px) calc(100% - 28.12px),
+        calc(50% - 28px) calc(100% - 39.96px), calc(50% - 22px) calc(100% - 74px),
+        calc(50% - 27px) calc(100% - 74px), calc(50% - 29px) calc(100% - 67.34px),
+        calc(50% - 31px) calc(100% - 61.42px), calc(50% - 33px) calc(100% - 55.5px),
+        calc(50% - 36px) calc(100% - 48.84px), calc(50% - 40px) calc(100% - 42.18px),
+        calc(50% - 44px) calc(100% - 35.52px), calc(50% - 48px) calc(100% - 30.34px),
+        calc(50% - 53px) calc(100% - 24.42px), calc(50% - 58px) calc(100% - 19.24px),
+        calc(50% - 63.5px) calc(100% - 14.06px), calc(50% - 68px) calc(100% - 10.36px),
+        calc(50% - 75px) calc(100% - 5.92px), calc(50% - 81px) calc(100% - 2.96px),
+        calc(50% - 86px) calc(100% - 1.48px), calc(50% - 93px) calc(100% - .74px), 0 100%
+      );
+      color: white;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h1{
+        font-size: 1rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="custom-shape">
+    <h1>Custom Clip-Path Shape</h1>
+  </div>
+
+</body>
+</html>
